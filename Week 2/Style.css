@@ -1,0 +1,9 @@
+body{background-color: pink}
+#name{background-color: blue;    width:auto;border-style: solid;}
+h1{text-align: center;}
+#my_info{border-style: solid;background-color: Yellow;}
+.image{position: absolute;top:110px;right: 15px;width: 300px;border:7px groove green}
+.link{position: absolute;top:360px;right: 15px;width: 300px;
+  font-size: 20px;font-family: "Times New Roman";}
+.aboutme{background-color: pink}
+p{font-size: 18px;font-style: italic;}

@@ -1,0 +1,134 @@
+#grid-floats{
+  width:100%;
+}
+body{
+  background-color: #778899;
+}
+h2{
+  text-align: center;
+  color: brown;
+  font-family: serif;
+  font-size: 2vw;
+  clear: both;
+}
+
+/*using ul with out the dot*/
+ul{list-style: none;}
+/* li content properties */
+#grid-floats .grid-item img{
+  width: 5vw;
+}
+#grid-floats .grid-item p{
+  font-size: 1vw;
+}
+#grid-floats .grid-item h3{
+  font-size:1.5vw;
+}
+
+/*grid item properties*/
+#grid-floats .grid-item{
+  background-color: 	#DEB887;
+  color: white;
+  position: relative;
+  width: 17vw;
+  height: 23vw;
+  /* border: 0.1vw solid black; */
+  text-align: center;
+  padding: 1vw;
+  float: left;
+  margin: 1vw;
+}
+
+/*grid item properties for the 1st child*/
+#grid-floats .grid-item:nth-child(1){
+  position: relative;
+  width: 38vw;
+  margin: 1vw;
+}
+/*Differnt items highlighted */
+#grid-floats .grid-item:nth-child(5), #grid-floats .grid-item:nth-child(8) ,#grid-floats .grid-item:nth-child(14){
+  background-color:	#A52A2A;
+  position: relative;
+  margin: 1vw;
+  font-style: italic;
+}
+/* Using flexbox*/
+#grid-flex{
+  width:85vw;
+  display: flex;
+  flex-wrap:wrap;
+}
+#grid-flex .grid-item{
+  background-color: #bbb;
+  color: white;
+  position: relative;
+  width: 17vw;
+  height: 23vw;
+  /* border: 0.1vw solid black; */
+  text-align: center;
+  padding: 1vw;
+  margin: 1vw;
+}
+#grid-flex .grid-item img{
+  width: 5vw;
+}
+#grid-flex .grid-item p{
+  font-size: 1vw;
+
+
+}
+#grid-flex .grid-item h3{
+  font-size:1.5vw;
+}
+#grid-flex .grid-item:nth-child(1){
+  width: 38vw;
+  text-decoration: underline;
+  font-style:oblique;
+  background-color: #eee;
+  color: black;
+}
+#grid-flex .grid-item:nth-child(6){
+  text-decoration: underline;
+  font-style:oblique;
+  background-color: #eee;
+  color: black;
+}
+/*media query for tablets both for flex and float*/
+
+@media screen and (max-width:1023px) and (min-width:769px){
+  /*First child */
+  #grid-flex .grid-item:nth-child(1),#grid-floats .grid-item:nth-child(1){
+    position: relative;
+    width: 36.5vw;
+  }
+  /*second child*/
+  #grid-flex .grid-item:nth-child(2),#grid-floats .grid-item:nth-child(2){
+    position: relative;
+    width: 36.5vw;
+    margin: 1vw;
+  }
+  #grid-flex .grid-item,#grid-floats .grid-item{
+    position: relative;
+    width: 23vw;
+  }
+}
+
+/* Media query for Cellphone device both for flex and float*/
+@media screen and (max-width:768px){
+  /*First child */
+
+  #grid-flex,#grid-floats{
+    width:83vw;
+  }
+  #grid-flex .grid-item:nth-child(1),#grid-floats .grid-item:nth-child(1){
+    position: relative;
+    width: 78.5vw;
+
+  }
+
+  #grid-flex .grid-item,  #grid-floats .grid-item{
+    position: relative;
+    width: 37vw;
+    margin:1vw;
+  }
+}

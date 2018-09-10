@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<head>
+  <title>My First Chatbot</title>
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+  <div id="demo">
+
+      <h1> My first chatbot! </h1>
+      <h3> Talk to your bot!</h3>
+
+      <div id="user">
+        <input id="input" type="text" placeholder="Say something" />
+        <button id="submit">Submit</button>
+
+        <input type="radio" name="filterType" class="filterType" id="random" value="Random" checked> Random
+        <input type="radio" name="filterType" class="filterType" id="shortest" value="Shortest Answer"> Shortest Answer
+        <input type="radio" name="filterType" class="filterType" id="longest" value="Longest Answer"> Longest Answer
+      </div>
+
+      <br />
+
+      <h3> Chat history </h3>
+      <div id="chatBot">
+          <textarea id="output" name="ChatHistory" rows="15"></textarea>
+          <br />
+      </div>
+
+  </div>
+</body>
+ <script src="js/script.js"></script>
+</html>

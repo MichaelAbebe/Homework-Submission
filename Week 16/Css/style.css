@@ -1,0 +1,81 @@
+h1 {
+  color: white;
+  font-size: 50px;
+  margin-top: 0;
+  text-align: center;
+}
+h2{
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+  margin-top: 0px;
+}
+a{
+  text-decoration: none;
+}
+.main_item {
+  position: relative;
+  background-color: lightgrey;
+  height: 80px;
+  flex-direction: row;
+  width: 100%;
+  flex: 10;
+
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top:  100px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 5px black;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #5c6ac4;
+  height: 750px;
+}
+
+.navigation {
+  display: flex;
+  width: 110%;
+  height: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* border: 5px solid black; */
+  justify-content: flex-center;
+  background-color: #2a2c2e;
+}
+
+.items {
+  width: 40%;
+  border: 2px solid #e2e2e3;
+  background-color: white;
+  position: relative;
+  height: 250px;
+  margin-top: 25px;
+}
+
+.links {
+  list-style-type: none;
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 15px;
+  margin-right: 40px;
+  font
+}
+
+.images {
+  width: 30%;
+  float: left;
+  align-self: flex-start;
+}
+
+h5 {
+  text-align: center;
+  font-size: 25px;
+}

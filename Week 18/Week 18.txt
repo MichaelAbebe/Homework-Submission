@@ -1,0 +1,24 @@
+SELECT * FROM [Employee]
+
+SELECT *
+FROM [Employee]
+WHERE First_Name LIKE 'S%'
+
+SELECT City_Of_Residence
+FROM [Employee]
+
+SELECT *
+FROM [Employee]
+WHERE City_Of_Residence LIKE 'Toronto' and City_Of_Residence LIKE 'Mississauga'
+
+
+SELECT *
+FROM [Employee]
+WHERE Employee_ID <= 320  and City_Of_Residence LIKE 'Mississauga' LIMIT 3
+
+SELECT *
+FROM [Employee]
+ORDER BY Employee_ID ASC
+
+INSERT INTO [Employee]
+VALUES(401,'Michael','Muluneh','Toronto') 
